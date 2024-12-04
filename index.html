@@ -94,6 +94,18 @@
             cursor: pointer; /* Указатель при наведении */
             transition: background-color 0.3s; /* Плавный переход цвета */
         }
+        
+        .wall-parameter-button {
+            /* Фиксированный размер */
+             height: 60px; /* Фиксированный размер */
+            width: auto;
+            min-width: 80px;
+             background-color: #f1f1f1; /* Цвет фона по умолчанию */
+             border: 1px solid #ccc; /* Рамка */
+             cursor: pointer; /* Указатель при наведении */
+             transition: background-color 0.3s; /* Плавный переход цвета */
+        }
+        
 
         .size-width {
     width: auto; /* Уникальная ширина для одной кнопки */
@@ -109,7 +121,17 @@
             font-weight: bold; /* Жирный шрифт для активной кнопки */
         }
 
+        .wall-parameter-button.active {
+            background-color: white; /* Цвет фона при активации */
+            border-color: #ccc; /* Цвет рамки при активации */
+            font-weight: bold; /* Жирный шрифт для активной кнопки */
+        }
+
         .parameter-button:hover {
+            background-color: #e0e0e0; /* Цвет фона при наведении */
+        }
+
+        .wall-parameter-button:hover {
             background-color: #e0e0e0; /* Цвет фона при наведении */
         }
 
